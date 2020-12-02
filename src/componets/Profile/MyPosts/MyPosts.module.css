@@ -1,3 +1,7 @@
 .item img{
-    width: 50px;
+    width: 70px;
+}
+
+.item1{
+    border: 3px white solid;
 }
