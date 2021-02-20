@@ -2,10 +2,14 @@ import React  from 'react';
 import MyPosts from './MyPosts/MyPosts'
 import ProfileInfo from './MyPosts/ProfileInfo/ProfileInfo';
 
-const Profile = () =>{
+
+
+const Profile = (props) =>{
+
+
     return<div className='content'> 
-    <ProfileInfo />
-    <MyPosts />
+    <ProfileInfo/>
+    <MyPosts postData = {props.postData1.profilePage.posts} addPost={props.addPost} updateNewPostText={props.updateNewPostText}/>
   </div>
 }
 

@@ -5,8 +5,10 @@ const ProfileInfo = () =>{
     return(
       <div>
         <div>
-          <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSrtCFWKGcVcuyZNcNGYbxajolvwxiFAbYVRg&usqp=CAU"/>
-        </div>
+          
+{/*           <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSrtCFWKGcVcuyZNcNGYbxajolvwxiFAbYVRg&usqp=CAU"/>
+ */}      <h1>some</h1>  
+        </div>  
         <div className={s.description}>
           ava + description
         </div>
