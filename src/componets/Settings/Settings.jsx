@@ -5,7 +5,7 @@ import s from './Settings.module.css';
 const Settings =() =>{
     return(
         <div className = {s.div}>
-            News dgdf
+            <p>something</p>
         </div>
     )
 }

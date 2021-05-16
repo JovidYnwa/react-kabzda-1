@@ -3,7 +3,7 @@ import s from './ProfileInfo.module.css';
 
 const ProfileInfo = () =>{
     return(
-      <div>
+      <div className = {s.profileInfoBox}>
         <div>
           
 {/*           <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSrtCFWKGcVcuyZNcNGYbxajolvwxiFAbYVRg&usqp=CAU"/>

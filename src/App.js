@@ -9,9 +9,6 @@ import Profile  from './componets/Profile/Profile';
 import Settings from './componets/Settings/Settings';
 
 //All of our datas instead of redux
-
-
-
 const App = (props) => {
   return (
     <BrowserRouter>
@@ -19,10 +16,10 @@ const App = (props) => {
         <Header />
         <Navbar />
         <div className='app-wrapper-content'>
-          <Route path='/dialogs'  render={() =><Dialogs dialogsData1 = {props.state.dialogsData} messagesData1 = {props.state.messagesData}/>}/>
-          <Route path='/profile'  render={() =><Profile postData1 = {props.state} addPost={props.addPost} updateNewPostText={props.updateNewPostText}/>}/>
-          <Route path='/news'     component={News}/>
-          <Route path='/settings' component={Settings}/>  
+          <Route path='/profile'  render={() =><Profile postData1 = {props.state} dispatch = {props.dispatch} />}/>
+          <Route path='/dialogs'  render={() =><Dialogs store = {props.store}/>}/>
+          <Route path='/news'     render={() =><News prop1={'this text comes fom prop'}/>}/>
+          <Route path='/setting'  component={Settings}/>  
         </div>
       </div>
     </BrowserRouter>
